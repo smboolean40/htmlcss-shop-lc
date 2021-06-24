@@ -4,3 +4,17 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+/* Common */
+.container {
+	width: 60%;
+	margin: auto;
+}
+
+.product {
+	display: inline-block;
+	height: 300px;
+	width: calc(100% / 3);
+	/* background-color: pink;
+	border: 1px solid #000; */
+}
