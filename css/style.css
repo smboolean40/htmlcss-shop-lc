@@ -7,14 +7,50 @@
 
 /* Common */
 .container {
-	width: 60%;
+	width: 50%;
 	margin: auto;
+}
+
+.row {
+	margin: 20px 0;
 }
 
 .product {
 	display: inline-block;
-	height: 300px;
+	position: relative;
 	width: calc(100% / 3);
+	padding: 5px;
 	/* background-color: pink;
 	border: 1px solid #000; */
+}
+
+.product-img {
+	width: 100%;
+}
+
+.discount {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background-color: green;
+}
+.discount.discount-red {
+	background-color: red;
+}
+
+.heart {
+	display: none;
+	position: absolute;
+	color: red;
+	width: 100%;
+	text-align: center;
+	bottom: 20px;
+}
+
+.product:hover .heart {
+	display: block;
+}
+
+.product:hover .discount {
+	display: none;
 }
